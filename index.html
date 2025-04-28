@@ -67,11 +67,11 @@
   </main>
 
   <!-- Carrusel -->
-  <div class="container mb-5">
-  <div id="carouselRicomida" class="carousel slide mb-5" data-bs-ride="carousel">
-    <div class="carousel-inner">
-
-    <!-- Primer grupo de 4 imágenes -->
+  <div class="container mb-5 d-none d-md-block">
+    <div id="carouselRicomida" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+  
+      <!-- Primer grupo de 4 imágenes -->
       <div class="carousel-item active">
         <div class="row">
           <div class="col-3"><img src="./assets/img/slider-1.png" class="d-block w-100" alt="Ingrediente 1"></div>
@@ -81,7 +81,7 @@
         </div>
       </div>
 
-    <!-- Segundo grupo de 4 imágenes -->
+      <!-- Segundo grupo de 4 imágenes -->
       <div class="carousel-item">
         <div class="row">
           <div class="col-3"><img src="./assets/img/slider-5.png" class="d-block w-100" alt="Ingrediente 5"></div>
@@ -90,25 +90,27 @@
           <div class="col-3"><img src="./assets/img/slider-8.png" class="d-block w-100" alt="Ingrediente 8"></div>
         </div>
       </div>
+
     </div>
 
-      <!-- Botones de navegación -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselRicomida" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselRicomida" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
-      </button>
+     <!-- Botones de navegación -->
+     <button class="carousel-control-prev" type="button" data-bs-target="#carouselRicomida" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselRicomida" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
 
-  </div>
+    <!-- Indicadores de páginas -->
     <div class="carousel-indicators mt-3">
       <button type="button" data-bs-target="#carouselRicomida" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselRicomida" data-bs-slide-to="1" aria-label="Slide 2"></button>
     </div>
+
   </div>
-  </div>
+</div>
   
   <!-- Ingredientes y Preparación -->
   <section class="container mb-5">
