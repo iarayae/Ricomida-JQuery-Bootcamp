@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ricomida</title>
+    <link rel="shortcut icon" href="./assets/img/logo.png" type="img/png">
     <!-- Conectores -->
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -17,7 +18,7 @@
 
  <!-- Header y Navbar -->
  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #373A3C;">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #373A3C;">
       <div class="container">
         <a class="navbar-brand fs-3" href="#" style="font-family: 'Lobster', cursive;">Ricomida</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -25,10 +26,10 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Recetas</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#recetas">Recetas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
           </ul>
         </div>
       </div>
@@ -37,7 +38,7 @@
 
   <!-- Sección Receta -->
   <main class="container my-5">
-    <div class="row g-4 align-items-center">
+    <div class="row g-4 align-items-center" id="inicio">
       <div class="col-12 col-md-6">
         <img src="./assets/img/principal.jpg" alt="Pizza Ricomida" class="img-fluid">
       </div>
@@ -46,20 +47,9 @@
         <hr>
         <p class="fw-bold">110 MIN / 6 A 8 PORCIONES</p>
         <div class="d-flex flex-wrap gap-2">
-          <button 
-            class="btn btn-outline-dark" 
-            id="enviarCorreoSec"
-            data-bs-toggle="tooltip"
-            data-bs-placement="bottom"
-            title="Presiona para enviar a tu correo">
-            Enviar por correo
+          <button class="btn btn-outline-dark" id="enviarCorreoSec" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Presiona para enviar a tu correo">Enviar por correo
           </button>
-          <button 
-            class="btn btn-outline-dark"
-            data-bs-toggle="tooltip"
-            data-bs-placement="bottom"
-            title="Agrega esta receta a tus favoritos">
-            Añadir a favoritos
+          <button class="btn btn-outline-dark" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Agrega esta receta a tus favoritos">Añadir a favoritos
           </button>
         </div>
       </div>
@@ -118,7 +108,7 @@
       <div class="col-md-6">
         <h3 class="fw-bold mb-3">INGREDIENTES</h3>
         <ul>
-            <p>Masa<br></p>
+            <p><b><br>Masa</b><br></p>
             <li>20 gr de levadura seca instantánea</li>
             <li>1 cucharadita de azúcar</li>
             <li>500 ml agua tibia</li>
@@ -127,7 +117,7 @@
             <li>65 gr harina de maíz fina (chuchoca)</li>
             <li>2 cucharaditas de sal</li>
             <li>625 gr harina</li><br>
-          <p>Salsa<br></p>
+          <p><b>Salsa</b><br></p>
             <li>5 cucharadas de aceite de oliva</li>
             <li>½ cebolla picada en cubos finos</li>
             <li>2 cucharaditas de sal</li>
@@ -135,7 +125,7 @@
             <li>1 ½ cucharadas de Albahaca Gourmet</li>
             <li>2 tarros de tomates en cubos al natural</li>
             <li>2 cucharaditas de azúcar</li><br>
-          <p>Relleno<br></p>
+          <p><b>Relleno</b><br></p>
             <li>½ cebolla, en cubos</li>
             <li>500 gr hojas de espinacas picadas</li>
             <li>400 gr de champiñones, laminados</li>
@@ -158,7 +148,7 @@
   </section>
 
   <!-- Recetas Relacionadas -->
-  <section class="container mb-5">
+  <section class="container mb-5" id="recetas">
     <hr class="mb-4">
     <h3 class="text-center fw-bold mb-4">RECETAS RELACIONADAS</h3>
     <div class="row g-4">
@@ -203,7 +193,7 @@
 
   <!-- Footer -->
     <footer class="bg-dark text-white text-center py-4">
-        <div class="container">
+        <div class="container" id="contacto">
             <span class="fs-2 fst-italic" style="font-family: 'Lobster', cursive;">Ricomida</span>
         </div>
     </footer>
